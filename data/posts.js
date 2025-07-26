@@ -385,4 +385,5 @@ const posts = [
 ];
 
 // Expose posts globally (important for inline script tags)
-window.posts = posts;
+// Export the posts array so it can be imported in Next.js pages
+export default posts;
