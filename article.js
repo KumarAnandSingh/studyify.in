@@ -221,7 +221,7 @@ function renderRecommended(articleId) {
     card.innerHTML = `
       <img src="${post.image}" alt="${post.title}">
       <div class="post-card-content">
-        <div class="post-meta">${post.category} • ${post.date}</div>
+        <div class="post-meta">${post.category}${post.subcategory ? ': ' + post.subcategory : ''} • ${post.date}</div>
         <h3>${post.title}</h3>
         <p>${post.excerpt}</p>
         <a href="blog.html?id=${post.id}" class="btn">Read More</a>
@@ -256,7 +256,7 @@ function renderArticle() {
   // Meta
   const metaEl = document.createElement('div');
   metaEl.classList.add('post-meta');
-  metaEl.textContent = `${post.category} • ${post.date}`;
+  metaEl.textContent = `${post.category}${post.subcategory ? ': ' + post.subcategory : ''} • ${post.date}`;
   wrapper.appendChild(metaEl);
   // Image
   const imgEl = document.createElement('img');

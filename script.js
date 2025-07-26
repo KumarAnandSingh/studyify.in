@@ -36,7 +36,14 @@ function renderCategories(posts) {
   const categoryList = document.getElementById('categoryList');
   if (!categoryList) return;
   // Extract unique categories
-  const categories = Array.from(new Set(posts.map(p => p.category)));
+  let categories = Array.from(new Set(posts.map(p => p.category)));
+  // Sort categories according to a predefined order; unknown categories go to the end
+  const categoryOrder = ['Popular', 'AI', 'Tech', 'Finance', 'Politics', 'Exam', 'Lifestyle'];
+  categories = categories.sort((a, b) => {
+    const indexA = categoryOrder.indexOf(a);
+    const indexB = categoryOrder.indexOf(b);
+    return (indexA === -1 ? categoryOrder.length : indexA) - (indexB === -1 ? categoryOrder.length : indexB);
+  });
   // Add 'All' filter
   const allItem = document.createElement('div');
   allItem.textContent = 'All';
@@ -73,7 +80,7 @@ function renderPosts(postsToRender) {
     card.innerHTML = `
       <img src="${post.image}" alt="${post.title}">
       <div class="post-card-content">
-        <div class="post-meta">${post.category} • ${post.date}</div>
+        <div class="post-meta">${post.category}${post.subcategory ? ': ' + post.subcategory : ''} • ${post.date}</div>
         <h3>${post.title}</h3>
         <p>${post.excerpt}</p>
         <a href="blog.html?id=${post.id}" class="btn">Read More</a>
