@@ -187,7 +187,8 @@ const posts = [
   {
     id: 'ai-cybersecurity-defenses',
     title: 'AI in Cybersecurity: Defending Against Evolving Threats',
-    category: 'AI',
+    category: 'Popular',
+    subcategory: 'AI',
     image: 'ai-cybersecurity.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'With cyber attacks growing in sophistication, AI-driven systems are automating threat detection, predicting attacks and responding in real time.',
