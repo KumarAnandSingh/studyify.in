@@ -7,11 +7,7 @@ import posts from '../data/posts';
 const CATEGORY_ORDER = [
   'Popular',
   'AI',
-  'Tech',
-  'Finance',
-  'Politics',
-  'Exam',
-  'Lifestyle'
+  'Tech'
 ];
 
 export default function Home() {
@@ -38,14 +34,10 @@ export default function Home() {
     fetchTrending();
   }, []);
 
-  // Filter posts based on the selected category. For the Exam
-  // category, we treat all exam subcategories as Exam for the
-  // top‑level filter. When "All" is selected, return all posts.
+  // Filter posts based on the selected category. When "All" is
+  // selected, return all posts.
   const filteredPosts = posts.filter((post) => {
     if (selectedCategory === 'All') return true;
-    if (selectedCategory === 'Exam') {
-      return post.category === 'Exam';
-    }
     return post.category === selectedCategory;
   });
 
