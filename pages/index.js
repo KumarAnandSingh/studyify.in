@@ -74,25 +74,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section
-        style={{
-          background: 'linear-gradient(135deg, #0a66c2, #f8991d)',
-          color: '#fff',
-          padding: '4rem 1rem'
-        }}
-      >
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <h1 style={{ fontSize: '2.5rem', margin: '0 0 1rem' }}>
-            Explore Insights & News on Competitive Exams & Tech
-          </h1>
-          <p style={{ maxWidth: '600px', fontSize: '1.1rem', lineHeight: '1.5' }}>
-            Discover strategies, stories and technology trends that will give your preparation an
-            edge. From UPSC and SSC to banking and tech innovations, we cover it all.
-          </p>
-        </div>
-      </section>
-
       {/* Trending news section */}
       {trending.length > 0 && (
         <section style={{ maxWidth: '1100px', margin: '2rem auto', padding: '0 1rem' }}>
