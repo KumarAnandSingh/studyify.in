@@ -1,23 +1,13 @@
 /**
- * API route that retrieves top news headlines from NewsAPI.org.
+ * API route that retrieves top news headlines from the GNews API.
  *
- * This handler runs on the server (Vercel serverless function) and is
- * responsible for fetching trending news stories and returning a
- * simplified payload. It expects a `NEWS_API_KEY` environment
- * variable to be configured in Vercel. If the key is missing or the
- * external request fails, the handler responds with an error message
- * and a 500 status code. Only the first few stories are returned to
- * minimise payload size.
- */
-
-/**
- * API route that fetches trending news stories using the GNews API.  The
- * GNews service aggregates articles from a wide range of sources and
- * provides a simple REST API with a generous free tier (100 requests per
- * day).  To authenticate requests, create an API token at gnews.io and
- * assign it to the `GNEWS_API_KEY` environment variable.  If the
- * environment variable is not defined, a default token may be provided
- * directly in the code (not recommended for production).
+ * This serverless handler fetches trending news stories and returns a
+ * simplified payload. It requires a `GNEWS_API_KEY` environment variable
+ * for authentication. The free tier of GNews permits up to 100 requests
+ * per day; exceeding this quota may cause the upstream service to reject
+ * requests. If the key is missing or the external request fails, the
+ * handler responds with an error message and a 500 status code. Only the
+ * first few stories are returned to minimise payload size.
  */
 export default async function handler(req, res) {
   const token = process.env.GNEWS_API_KEY || '5afe492a9d267af9b343dbba68bbc9d8';
