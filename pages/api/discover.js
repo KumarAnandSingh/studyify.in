@@ -7,7 +7,7 @@
  * variable to be configured in Vercel. If the key is missing or the
  * external request fails, the handler responds with an error message
  * and a 500 status code. Only the first few stories are returned to
- * minimise payload size.
+ * minimize payload size.
  */
 
 /**
