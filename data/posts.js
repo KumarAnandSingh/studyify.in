@@ -103,7 +103,7 @@ const posts = [
     title: 'Generative AI: The Creative Engine of 2025',
     // Place AI‑driven posts under the AI category
     category: 'AI',
-    image: 'images/generative-ai.png',
+    image: 'generative-ai.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Generative AI is reshaping how content is created, from text and images to music and simulations. Discover why 2025 is the year it goes mainstream.',
     content: `
@@ -118,7 +118,7 @@ const posts = [
     title: 'Quantum Computing: A Leap Beyond Classical Limits',
     // Quantum computing is a technology topic but not strictly AI; classify under Tech
     category: 'Tech',
-    image: 'images/quantum-computing.png',
+    image: 'quantum-computing.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Quantum computers leverage the principles of quantum mechanics to solve problems far beyond the reach of classical machines, with implications for cryptography, materials and drug discovery.',
     content: `
@@ -132,7 +132,7 @@ const posts = [
     id: '5g-expansion-connected-world',
     title: '5G Expansion: Powering the Connected World',
     category: 'Tech',
-    image: 'images/5g-network.png',
+    image: '5g-network.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'The rollout of 5G networks delivers blazing speeds and low latency, enabling the next generation of connected devices—from IoT sensors to augmented reality and autonomous vehicles.',
     content: `
@@ -146,7 +146,7 @@ const posts = [
     id: 'virtual-augmented-reality-immersive-experiences',
     title: 'Virtual & Augmented Reality: Immersive Experiences',
     category: 'Tech',
-    image: 'images/vr-ar.png',
+    image: 'vr-ar.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Improved VR and AR hardware is making immersive experiences part of everyday life—from gaming and training to retail and education.',
     content: `
@@ -160,7 +160,7 @@ const posts = [
     id: 'iot-smart-cities',
     title: 'Internet of Things: Building Smarter Cities',
     category: 'Tech',
-    image: 'images/iot.png',
+    image: 'iot.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Networks of sensors and connected devices are turning cities into intelligent systems that manage resources efficiently and improve residents’ quality of life.',
     content: `
@@ -174,7 +174,7 @@ const posts = [
     id: 'edge-computing-real-time',
     title: 'Edge Computing: Real‑Time Processing at the Source',
     category: 'Tech',
-    image: 'images/edge-computing.png',
+    image: 'edge-computing.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'By processing data close to where it’s generated, edge computing reduces latency and makes applications like autonomous vehicles and industrial automation possible.',
     content: `
@@ -188,7 +188,7 @@ const posts = [
     id: 'ai-cybersecurity-defenses',
     title: 'AI in Cybersecurity: Defending Against Evolving Threats',
     category: 'AI',
-    image: 'images/ai-cybersecurity.png',
+    image: 'ai-cybersecurity.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'With cyber attacks growing in sophistication, AI-driven systems are automating threat detection, predicting attacks and responding in real time.',
     content: `
@@ -202,7 +202,7 @@ const posts = [
     id: 'digital-twins-virtual-replicas',
     title: 'Digital Twins: Bridging Physical and Virtual Worlds',
     category: 'Tech',
-    image: 'images/digital-twins.png',
+    image: 'digital-twins.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Digital twins are virtual replicas of physical systems that allow engineers to simulate, monitor and optimise before making real‑world changes.',
     content: `
@@ -216,7 +216,7 @@ const posts = [
     id: 'ai-trism-trust-risk-security',
     title: 'AI TRiSM: Building Trustworthy and Secure AI',
     category: 'AI',
-    image: 'images/ai-trism.png',
+    image: 'ai-trism.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'As AI becomes deeply embedded in decision‑making, AI TRiSM frameworks ensure transparency, risk mitigation and security throughout the AI lifecycle.',
     content: `
@@ -230,7 +230,7 @@ const posts = [
     id: 'personalized-medicine-ai-healthcare',
     title: 'Personalized Medicine: AI Tailoring Healthcare',
     category: 'AI',
-    image: 'images/generative-ai.png',
+    image: 'generative-ai.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Artificial intelligence is helping doctors tailor treatments to an individual’s genetics, environment and lifestyle, transforming outcomes for patients.',
     content: `
@@ -247,7 +247,7 @@ const posts = [
     id: 'agentic-ai-autonomous-programs',
     title: 'Agentic AI: Autonomous Programs on the Rise',
     category: 'AI',
-    image: 'images/generative-ai.png',
+    image: 'generative-ai.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Agentic AI—software agents that can plan and act on their own—is set to become one of the most talked‑about AI trends. Learn how these systems are already handling simple tasks and what challenges lie ahead.',
     content: `
@@ -261,7 +261,7 @@ const posts = [
     id: 'measuring-generative-ai-impact',
     title: 'How Do We Measure Generative AI’s Impact?',
     category: 'AI',
-    image: 'images/generative-ai.png',
+    image: 'generative-ai.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Many organisations claim generative AI boosts productivity—yet few measure its true impact. We explore why data collection and controlled experiments are essential to prove value.',
     content: `
@@ -275,7 +275,7 @@ const posts = [
     id: 'creating-data-driven-culture',
     title: 'Beyond the Hype: Building a Data‑Driven Culture',
     category: 'AI',
-    image: 'images/generative-ai.png',
+    image: 'generative-ai.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Generative AI isn’t a silver bullet for data‑driven decision making. We examine why organisational culture still matters and how to empower people with data.',
     content: `
@@ -289,7 +289,7 @@ const posts = [
     id: 'ai-in-finance-trends',
     title: 'AI in Finance: From Fraud Detection to Risk Management',
     category: 'Finance',
-    image: 'images/finance.png',
+    image: 'finance.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Financial services are embracing AI for fraud detection, credit scoring, market analysis and regulatory compliance. We look at why interest in AI has skyrocketed and what’s next.',
     content: `
@@ -303,7 +303,7 @@ const posts = [
     id: 'blockchain-banking-revolution',
     title: 'Blockchain Adoption in Banking: A New Era of Efficiency',
     category: 'Finance',
-    image: 'images/finance.png',
+    image: 'finance.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Blockchain isn’t just for cryptocurrencies. Banks are embracing distributed ledgers to make transactions faster, cheaper and more secure.',
     content: `
@@ -317,7 +317,7 @@ const posts = [
     id: 'personal-finance-apps-surge',
     title: 'Personal Finance Apps: A Booming Market',
     category: 'Finance',
-    image: 'images/finance.png',
+    image: 'finance.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Downloads of personal finance apps have skyrocketed as consumers take control of their money. We explore why people love these apps and how open banking will accelerate growth.',
     content: `
@@ -331,7 +331,7 @@ const posts = [
     id: 'usaid-gaza-aid-report',
     title: 'USAID Report: No Evidence Hamas Stole Gaza Aid',
     category: 'Politics',
-    image: 'images/politics.png',
+    image: 'politics.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'An internal USAID analysis challenges Israeli claims that Hamas diverted humanitarian aid in Gaza. Here’s what the report found and why it matters.',
     content: `
@@ -345,7 +345,7 @@ const posts = [
     id: 'india-uk-trade-deal-update',
     title: 'India‑UK Trade Deal: Tariff Cuts and Strategic Balancing',
     category: 'Politics',
-    image: 'images/politics.png',
+    image: 'politics.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'India’s trade pact with the UK slashes tariffs on cars and other goods while protecting key sectors. We explain the details and what’s at stake.',
     content: `
@@ -360,7 +360,7 @@ const posts = [
     title: 'GATE Exam: Your Guide to Engineering Admissions',
     category: 'Exam',
     subcategory: 'GATE',
-    image: 'images/exam.png',
+    image: 'exam.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'Planning to appear for the GATE exam? Get insights into its structure, syllabus and how it opens doors to postgraduate programs and PSU jobs.',
     content: `
@@ -375,7 +375,7 @@ const posts = [
     title: 'NEET UG: Navigating India’s Medical Entrance Exam',
     category: 'Exam',
     subcategory: 'NEET',
-    image: 'images/exam.png',
+    image: 'exam.png',
     date: formatDate(2025, 7, 26),
     excerpt: 'NEET UG is India’s gateway to undergraduate medical courses. Learn what the exam entails, from subjects tested to preparation tips and available languages.',
     content: `
