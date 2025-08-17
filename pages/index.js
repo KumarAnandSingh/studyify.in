@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import posts from '../data/posts';
+import { resolveImagePath } from '../utils/image';
 
 // Define the order of categories shown on the home page. The "All"
 // category is implicit and handled in component state.
@@ -195,7 +196,7 @@ export default function Home() {
               style={{ backgroundColor: '#fff', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)', overflow: 'hidden' }}
             >
               <img
-                src={`/images/${post.image}`}
+                src={resolveImagePath(post.image)}
                 alt={post.title}
                 style={{ width: '100%', height: '180px', objectFit: 'cover' }}
               />

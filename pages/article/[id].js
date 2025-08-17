@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import posts from '../../data/posts';
+import { resolveImagePath } from '../../utils/image';
 
 export default function ArticlePage() {
   const router = useRouter();
@@ -28,7 +29,7 @@ export default function ArticlePage() {
         <a style={{ color: 'var(--primary)', display: 'inline-block', marginBottom: '1rem' }}>← Back to Home</a>
       </Link>
       <img
-        src={`/images/${post.image}`}
+        src={resolveImagePath(post.image)}
         alt={post.title}
         style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px' }}
       />
@@ -65,7 +66,7 @@ export default function ArticlePage() {
                   }}
                 >
                   <img
-                    src={`/images/${rec.image}`}
+                    src={resolveImagePath(rec.image)}
                     alt={rec.title}
                     style={{ width: '100%', height: '150px', objectFit: 'cover' }}
                   />
