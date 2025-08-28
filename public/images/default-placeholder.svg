@@ -1,0 +1,14 @@
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f7fa"/>
+      <stop offset="100%" style="stop-color:#e9eff7"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="100" r="40" fill="#0a66c2"/>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white" x="188" y="88">
+    <path d="M19 7v2.99s-1.99.01-2 0V7h-3s.01-1.99 0-2h3V2h2v3h3v2h-3zm-3 4V8h-3V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-8h-3zM5 19l3-4 2 3 3-4 4 5H5z"/>
+  </svg>
+  <text x="200" y="165" font-family="system-ui" font-size="14" fill="#666666" text-anchor="middle">📰 Studyify Content</text>
+</svg>

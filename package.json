@@ -1,0 +1,33 @@
+{
+  "name": "studyify-ai-newsletter",
+  "version": "2.0.0",
+  "description": "AI-Powered Newsletter Hub with real-time content aggregation",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^13.5.6"
+  },
+  "keywords": [
+    "ai-newsletter",
+    "content-aggregation", 
+    "real-time-news",
+    "tech-news",
+    "indian-news",
+    "entertainment"
+  ],
+  "author": "Studyify AI",
+  "license": "MIT"
+}
